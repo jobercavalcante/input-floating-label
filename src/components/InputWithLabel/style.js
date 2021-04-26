@@ -55,6 +55,7 @@ export const InputBorder = styled.div`
 export const InputBorderActive = styled.div`
   width: 0;
   height: 2px;
+  margin: auto;
   background-color: #371e5b;
   transition: all 0.45s ease-out;
   overflow: hidden;

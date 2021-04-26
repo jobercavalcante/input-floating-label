@@ -6,7 +6,7 @@ function App() {
       <InputWithLabel
         nome="senha"
         id="nome"
-        tipo="password"
+        tipo="text"
         label="Digite a senha"
       />
     </div>
