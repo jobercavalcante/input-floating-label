@@ -6,9 +6,9 @@ export const InputContainer = styled.div`
   padding: 0.6rem 0.2rem 0.2rem;
 
   &:focus-within label {
-    transform: translate(-3px, -12px) scale(0.6);
+    transform: translate(-17px, -12px) scale(0.6);
   }
-  &:focus-within {
+  &:focus-within div > div {
     width: 100%;
   }
 
@@ -17,7 +17,7 @@ export const InputContainer = styled.div`
       props.ativo &&
       css`
         & > label {
-          transform: translate(-3px, -12px) scale(0.6);
+          transform: translate(-17px, -12px) scale(0.6);
         }
         & div > div {
           width: 100%;
