@@ -8,9 +8,8 @@ export const InputContainer = styled.div`
   &:focus-within label {
     transform: translate(-3px, -12px) scale(0.6);
   }
-  &:focus-within div > div {
+  &:focus-within {
     width: 100%;
-    background: blue;
   }
 
   ${(props) => {
@@ -19,6 +18,9 @@ export const InputContainer = styled.div`
       css`
         & > label {
           transform: translate(-3px, -12px) scale(0.6);
+        }
+        & div > div {
+          width: 100%;
         }
       `
     );
