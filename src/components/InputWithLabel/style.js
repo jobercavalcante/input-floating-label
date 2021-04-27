@@ -37,7 +37,7 @@ export const InputField = styled.input`
 `;
 
 export const InputLabel = styled.label`
-  transition: all 0.45s ease-out;
+  transition: all 0.35s ease-out;
   position: absolute;
   left: 0.2rem;
   top: 0.7rem;
@@ -57,7 +57,7 @@ export const InputBorderActive = styled.div`
   height: 2px;
   margin: auto;
   background-color: #371e5b;
-  transition: all 0.45s ease-out;
+  transition: all 0.5s ease-out;
   overflow: hidden;
   z-index: 2;
 `;

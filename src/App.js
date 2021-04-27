@@ -4,10 +4,12 @@ function App() {
   return (
     <div>
       <InputWithLabel
-        nome="senha"
+        name="senha"
         id="nome"
-        tipo="text"
+        type="text"
         label="Digite a senha"
+        required
+        autoComplete="off"
       />
     </div>
   );
