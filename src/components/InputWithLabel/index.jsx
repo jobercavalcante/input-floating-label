@@ -7,7 +7,14 @@ import {
   InputLabel,
 } from "./style";
 
-export function InputWithLabel({ nome, id, tipo, label }) {
+export function InputWithLabel({
+  name,
+  id,
+  type,
+  label,
+  autocomplete,
+  ...rest
+}) {
   const [ativo, setAtivo] = React.useState(false);
   const [value, setValue] = React.useState("");
 
@@ -16,14 +23,16 @@ export function InputWithLabel({ nome, id, tipo, label }) {
     setValue(value);
   }
 
+  console.log(autocomplete);
   return (
     <InputContainer ativo={ativo}>
       <InputField
-        type={tipo}
-        name={nome}
+        type={type}
+        name={name}
         id={id}
         value={value}
         onChange={(e) => handleChange(e.target)}
+        {...rest}
       />
       <InputLabel>{label}</InputLabel>
       <InputBorder>
